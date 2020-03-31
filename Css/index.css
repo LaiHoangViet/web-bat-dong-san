@@ -1,6 +1,7 @@
 header{
     position: relative;
     width:100%;
+    /* height: 174px; */
     top:0;
     z-index:11;
 }
@@ -71,8 +72,31 @@ img.d-block.w-100.anh-header {
 }
 
 .menu-logo {
+    height: 150px;
     opacity: 10.9;
-    background-color: #00000021;
+    background-color: #00000087;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-logo.active {
+    height: 100px;
+    background-color: white;
+    -webkit-box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+    -moz-box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+    box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+}
+
+.menu-logo.active img.logo {
+    width: 80%;
+    border: 1px solid black;
+}
+
+.menu-logo.active a.dropbtn {
+    color: black;
 }
 
 div#collapsibleNavbar {
@@ -146,7 +170,9 @@ a.dropbtn:hover {
 .search-dich-vu {
     position: absolute;
     top: 33%;
-    left: 19%;
+    left: 16%;
+    background-color: #0000004d;
+    width: 69%;
 }
 
 a#nav-home-tab {
@@ -174,20 +200,23 @@ a#nav-profile-tab.active {
 }
 
 .thanh-search {
-    width: 170%;
+    width: 168%;
 }
 
 button.btn.btn-primary.nut-search {
     margin-left: 64%;
-    width: 42%;
+    width: 40%;
+    background-color: #000064;
+    border-color: #000064;
 }
 
 select.form-control {
-    width: 117%;
+    width: 110%;
 }
 
 .search-dich-vu>.tab-content>.tab-pane>.row {
     margin-top: 2%;
+    width: 101%;
 }
 /*Slide show*/
 img.d-block.w-100.anh-header {
@@ -241,12 +270,21 @@ img.d-block.w-100.anh-header {
     font-weight: 700;
     font-family: inherit;
     font-size: 20px;
+    background-color: #000064;
 }
 
 .tieu-de-khau-hieu svg {
     display: block;
     margin-left: 48%;
     margin-bottom: 1%;
+}
+
+svg.svg-inline--fa.fa-file-chart-line.fa-w-12.fa-7x {
+    width: 19%;
+}
+
+svg.svg-inline--fa.fa-file-chart-line.fa-w-12.fa-7x:hover {
+    width: 23%;
 }
 
 /*Ngoi nha*/
@@ -353,6 +391,7 @@ a.box8-1 {
     display: block;
     margin-left: 45%;
     width: 10%;
+    margin-bottom: 1%;
 }
 
 .ngoi-nha {
@@ -558,12 +597,13 @@ span.box4-3 {
     display: block;
     margin-left: 45%;
     width: 11%;
+    margin-bottom: 1%;
 }
 
 .tieu-de-box4 {
     text-align: center;
     margin-bottom: 2%;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .tieu-de-box4 h3 {
@@ -577,6 +617,7 @@ span.box4-3 {
     padding-top: 1%;
     padding-bottom: 1%;
     margin-top: 3%;
+    margin-bottom: 3%;
     background-color: #959eff38;
 }
 
@@ -619,6 +660,7 @@ span.box4-3 {
     font-family: roboto;
     color: #000064;
     font-weight: 600;
+    margin-right: 2%;
 }
 
 .tieu-de-du-an a {
@@ -641,4 +683,208 @@ span.box4-3 {
     color: #060068;
     text-decoration: none;
 }
+.bakground svg {
+    margin-right: 2%;
+    width: 8%;
+    margin-bottom: 1%;
+}
 
+/*Tin tieu bieu*/
+.tin-bai-viet img {
+    width: 94%;
+    height: 250px;
+}
+
+.tin-bai-viet {
+    width: 21.9%;
+    margin-left: 8.5%;
+}
+
+.carousel-item.tin-tieu-bieu1.active {
+    display: flex;
+}
+
+a.carousel-control-prev {
+    background-color: #00004f;
+    height: 45px;
+    width: 3%;
+    border-radius: 56px;
+    margin-left: 5%;
+    margin-top: 9%;
+}
+
+a.carousel-control-next {
+    background-color: #00004f;
+    height: 45px;
+    width: 3%;
+    border-radius: 56px;
+    margin-right: 6.5%;
+    margin-top: 9%;
+}
+
+.tin-bai-viet-2 {
+    display: flex;
+}
+
+.bai-viet-so {
+    display: flex;
+}
+
+.tin-tieu-bieu h3 {
+    text-align: center;
+    font-family: roboto;
+    color: #000064;
+    font-weight: 600;
+}
+
+.tin-tieu-bieu svg {
+    margin-left: 47%;
+    width: 6%;
+    margin-bottom: 2%;
+}
+
+.so-bai {
+    font-size: 27px;
+    color: #000972;
+}
+
+.bai-viet-so a {
+    width: 84%;
+    color: black;
+}
+
+.bai-viet-so a:hover {
+    color: #070078;
+    text-decoration: none;
+}
+
+/*Footer*/
+.footer-2.logo-cong-ty img {
+    width: 40%;
+    display: block;
+    border-radius: 101px;
+}
+
+.footer {
+    background-color: #000038;
+    margin-top: 3%;
+}
+
+.footer-1 {display: flex;padding-bottom: 1%;padding-top: 1%;margin-left: 13%;}
+
+.footer-2.logo-cong-ty {
+    text-align: -webkit-center;
+    width: 30%;
+    order: 1;
+    margin-left: -9%;
+}
+
+span.name-cong-ty {
+    display: block;
+    color: white;
+}
+
+span.dia-chi-footer {
+    display: block;
+    color: white;
+}
+
+span.so-dien-thoai {
+    display: block;
+    color: white;
+}
+
+span.lien-ket {
+    color: white;
+}
+
+.footer-2.huong-dan-1 {
+    width: 30%;
+    margin-top: 2%;
+    order: 2;
+    margin-left: 15%;
+}
+
+span.tieu-de-footer {
+    display: block;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    width: 46%;
+}
+
+span.huong-dan {
+    display: block;
+    /* color: white; */
+    line-height: 3;
+}
+
+.footer-3 {display: block;margin-top: 4%;}
+
+span.lien-he.footer-3 {
+    display: block;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    width: 52%;
+}
+
+.lien-he-footer {
+    width: 35%;
+    order: 3;
+}
+
+input.input-footer.footer-3 {
+    width: 52%;
+}
+
+textarea.noi-dung-footer.footer-3 {
+    width: 52%;
+}
+
+button.btn.btn-success.send-footer.footer-3 {
+    background: white;
+    color: #000064;
+    border-color: white;
+}
+
+button.btn.btn-success.send-footer.footer-3:hover {
+    background: #000064;
+    color: #f8f9fa;
+    border-color: #000064;
+}
+
+span.huong-dan a {
+    color: white;
+}
+
+span.huong-dan a:hover {
+    text-decoration: none;
+}
+
+/*Them Linh tinh*/
+.Xem-them-nhabandat {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.Xem-them-nhabandat button {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #000064;
+}
+
+.xem-them-nhathuedat.button {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.xem-them-nhathuedat button {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #000064;
+}
+
+.xem-them-nhathuedat {
+    text-align: center;
+}
