@@ -1,0 +1,514 @@
+header{
+  position: relative;
+  width:100%;
+  /* height: 174px; */
+  top:0;
+  z-index:11;
+}
+
+/*Logo*/
+img.logo {
+  width: 100%;
+  border-radius: 68px;
+}
+
+/*Menu*/
+.custom-btn:hover{
+  letter-spacing:3px;
+  transition:0.8 ease;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover {
+  color: #e91e63;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #e91e63;
+}
+
+.dropdown-menu {
+  padding: 0px;
+}
+span.navbar-toggler-icon {
+  background-image: url(https://i.ibb.co/1v9M0dZ/menu.png) !important;
+  width: 25px;
+  height: 25px;
+  cursor:pointer;
+}
+button.navbar-toggler:focus {
+  outline: none;
+}
+
+a.dropdown-item {
+  padding: 10px;
+  background: #515156;
+  color: #fff;
+}
+
+img.d-block.w-100.anh-header {
+  width: 100%;
+  height: 937px;
+}
+
+.menu-logo {
+  height: 150px;
+  opacity: 10.9;
+  background-color: #00000087;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-logo.active {
+  height: 100px;
+  background-color: white;
+  -webkit-box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+  -moz-box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+  box-shadow: 1px 6px 9px 4px rgba(0,0,0,0.31);
+}
+
+.menu-logo.active img.logo {
+  width: 80%;
+  border: 1px solid black;
+}
+
+.menu-logo.active a.dropbtn {
+  color: black;
+}
+
+div#collapsibleNavbar {
+  margin-right: 6%;
+}
+
+a.navbar-brand.logo {
+  margin-left: 5%;
+  width: 7%;
+}
+
+a#navbardrop.muc-menu {
+  color: #ffffff;
+  filter: brightness(1.8);
+}
+
+.dropdown-menu.show {
+  border: 0px;
+}
+
+a#navbardrop {
+  font-size: 18px;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 197px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 110%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a.dropbtn {
+  color: white;
+  font-size: 20px;
+}
+
+a.dropbtn:hover {
+  color: white;
+}
+
+/*Search*/
+.tim-kiem {
+  position: absolute;
+  top: 23%;
+  left: 6%;
+  width: 69%;
+}
+
+a#nav-home-tab {
+  color: white;
+}
+
+a#nav-home-tab.active {
+  color: black;
+}
+
+a#nav-profile-tab {
+  color: white;
+}
+
+a#nav-profile-tab.active {
+  color: black;
+}
+
+.ngoi-nha>.mt-40>.row {
+  margin-top: 2.3%;
+}
+
+.row.search-1 {
+  z-index: 2;
+  filter: );
+}
+
+.thanh-search {
+  width: 168%;
+}
+
+button.btn.btn-primary.nut-search {
+  margin-left: 64%;
+  width: 22%;
+  background-color: #000064;
+  border-color: #000064;
+  position: absolute;
+  top: 0%;
+  left: 39%;
+}
+
+select.form-control {
+  width: 111%;
+}
+
+.tim-kiem>.tab-content>.tab-pane>.row {
+  margin-top: 2%;
+  width: 101%;
+}
+
+.background-tim-kiem {
+  background-image: url(../Img/anh25.png);
+  height: 256px;
+}
+
+/*Sap xep va ban nha gia re*/
+.ban-nha-dat-gia-re-nhat-nam {
+  display: flex;
+  margin-left: 32%;
+  /* border: 1px solid; */
+  width: 52%;
+  /* text-align: initial; */
+  /* border-radius: 5px; */
+  background-color: #959eff38;
+}
+
+.cot-1 a {
+  display: block;
+  color: black;
+}
+
+.cot-2 a {
+  display: block;
+  color: black;
+}
+
+.cot-1 {
+  width: 50%;
+  padding: 2% 0 2% 13%;
+}
+
+.col.muc-ban-nha-2 {
+  /* width: 50%; */
+}
+
+.sap-xep {
+  /* border: 1px solid; */
+  /* border-radius: 5px; */
+  width: 115%;
+  margin-left: 12%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  /* text-align: center; */
+  background-color: #959eff38;
+}
+
+.ban-nha-dat-gia-re-nhat-nam {}
+
+.cot-2 {
+  width: 50%;
+  padding: 2% 0 2% 11%;
+}
+
+.muc-ban-nha {
+  margin-top: 2%;
+  width: 99%;
+}
+
+.sap-xep span {
+  margin-right: 2%;
+  margin-left: 3%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #060153;
+}
+
+.dropdown.phu-hop-nhat {
+  margin-right: 3%;
+}
+
+.phu-hop-nhat button#dropdownMenu2 {
+  background-color: #00063e;
+  border: none;
+  color: white;
+}
+
+.dropdown-menu.show {
+  background-color: #dfdfdf;
+}
+
+.theo-gia button#dropdownMenu2 {
+  background-color: #00063e;
+  border: none;
+  color: white;
+}
+
+.cot-1 a:hover {
+  color: #030033;
+  text-decoration: none;
+}
+
+.cot-2 a:hover {
+  color: #030033;
+  text-decoration: none;
+}
+
+/*Tin bai viet*/
+
+.tin-bai-viet {
+  display: flex;
+  width: 91%;
+  height: 277px;
+  background-color: #959eff38;
+  margin-left: 9.6%;
+  margin-top: 2%;
+  padding: 1% 1% 1% 1%;
+}
+
+.muc-ban-nha-5 {
+  width: 60.5%;
+  margin-top: -84%;
+  margin-left: 1%;
+}
+
+.img-tin-bai-viet img {
+  width: 113%;
+  height: 250px;
+}
+
+.icon-noi-dung-bai.viet svg {
+  width: 4%;
+}
+
+.img-tin-bai-viet {
+  width: 100%;
+  margin-right: 8%;
+}
+
+.icon-noi-dung-bai.viet {
+  line-height: 2;
+}
+
+.noi-dung-tin-bai-viet .tieu-de a {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.noi-dung-tin-bai-viet .tieu-de a:hover {
+  color: #010057;
+  text-decoration: none;
+}
+
+.col.muc-ban-nha-3 h3 {
+    margin-left: 37%;
+    margin-bottom: 2%;
+}
+
+.tin-moi-1 img {
+    width: 39%;
+}
+
+.tin-tuc-moi {
+    margin-left: 32%;
+    margin-top: 3%;
+}
+
+.tin-moi-1 {
+    margin-top: 4%;
+    /* width: 84%; */
+    padding: 2% 2% 2% 2%;
+}
+
+.tin-tuc-moi h3 {
+    margin-left: -1%;
+}
+
+.muc-ban-nha-3 .tin-tuc-moi h3 {
+    margin-left: 23%;
+}
+
+.tin-tuc-moi-1 {
+    background-color: #959eff38;
+    width: 77%;
+}
+
+.tin-moi-1 a {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tin-moi-1 a:hover {
+    color: #0b0045;
+    text-decoration: none;
+}
+
+/*Footer*/
+.footer-2.logo-cong-ty img {
+    width: 40%;
+    display: block;
+    border-radius: 101px;
+}
+
+.footer {
+    background-color: #000038;
+    margin-top: 3%;
+}
+
+.footer-1 {display: flex;padding-bottom: 1%;padding-top: 1%;margin-left: 13%;}
+
+.footer-2.logo-cong-ty {
+    text-align: -webkit-center;
+    width: 30%;
+    order: 1;
+    margin-left: -9%;
+}
+
+span.name-cong-ty {
+    display: block;
+    color: white;
+}
+
+span.dia-chi-footer {
+    display: block;
+    color: white;
+}
+
+span.so-dien-thoai {
+    display: block;
+    color: white;
+}
+
+span.lien-ket {
+    color: white;
+}
+
+.footer-2.huong-dan-1 {
+    width: 30%;
+    margin-top: 2%;
+    order: 2;
+    margin-left: 15%;
+}
+
+span.tieu-de-footer {
+    display: block;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    width: 46%;
+}
+
+span.huong-dan {
+    display: block;
+    /* color: white; */
+    line-height: 3;
+}
+
+.footer-3 {display: block;margin-top: 4%;}
+
+span.lien-he.footer-3 {
+    display: block;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    width: 52%;
+}
+
+.lien-he-footer {
+    width: 35%;
+    order: 3;
+}
+
+input.input-footer.footer-3 {
+    width: 52%;
+}
+
+textarea.noi-dung-footer.footer-3 {
+    width: 52%;
+}
+
+button.btn.btn-success.send-footer.footer-3 {
+    background: white;
+    color: #000064;
+    border-color: white;
+}
+
+button.btn.btn-success.send-footer.footer-3:hover {
+    background: #000064;
+    color: #f8f9fa;
+    border-color: #000064;
+}
+
+span.huong-dan a {
+    color: white;
+}
+
+span.huong-dan a:hover {
+    text-decoration: none;
+}

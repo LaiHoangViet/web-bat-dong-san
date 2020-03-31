@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href=”https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css” rel=”stylesheet”/>
+	<link rel="stylesheet" type="text/css" href="../Css/mua.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Header -->
+	<div class="header">
+		<!-- Menu va logo -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top menu-logo" id="header">
+			<!-- Logo -->
+			<a class="navbar-brand logo" href="../index.html">
+				<img src="../Img/logo.jpg" class="logo">
+			</a>
+
+			<!-- Menu -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<div class="dropdown">
+							<a class="dropbtn" href="../Website/mua.html">Mua</a>
+							<div class="dropdown-content">
+								<a href="#">Căn hộ</a>
+								<a href="#">Nhà</a>
+								<a href="#">Dự án</a>
+								<a href="#">Bất động sản khác</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<div class="dropdown">
+							<a class="dropbtn">Thuê</a>
+							<div class="dropdown-content">
+								<a href="#">Căn hộ</a>
+								<a href="#">Nhà</a>
+								<a href="#">Phòng trọ</a>
+								<a href="#">Văn phòng</a>
+								<a href="#">Bất động sản khác</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown ">
+						<div class="dropdown">
+							<a class="dropbtn">Tin Tức</a>
+							<div class="dropdown-content">
+								<a href="#">Thông tin nhà đất</a>
+								<a href="#">Phong thủy</a>
+								<a href="#">Thiết kế kiến trúc</a>
+								<a href="#">Thư viện mẫu nhà</a>
+							</div>
+						</div>
+					</li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<div class="dropdown">
+							<a class="dropbtn">Kiến Trúc</a>
+							<div class="dropdown-content">
+								<a href="#">Kiến trúc xưa và nay </a>
+								<a href="#">Thế giới kiến trúc</a>
+								<a href="#">Thư viện mẫu nhà</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown muc-menu">
+						<div class="dropdown">
+							<a class="dropbtn">Giới Thiệu</a>
+							<div class="dropdown-content">
+								<a href="#">Xem tuổi xây nhà </a>
+								<a href="#">Chi phí dự tính xây nhà</a>
+								<a href="#">Tính lãi xuất</a>
+								<a href="#">Tư vấn phong thủy</a>
+								<a href="#">Tư vấn thiết kế</a>
+								<a href="#">Tư vấn nội ngoại thất</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Search -->
+	<div class="background-tim-kiem">
+		<div class="tim-kiem">
+			<div class="row search-1">
+				<div class="col">
+					<div class="wrapper loai-nha-dat">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Loại đất</option>
+							<option value="1">Căn hộ</option>
+							<option value="2">Nhà riêng</option>
+							<option value="3">Biệt thự</option>
+							<option value="4">Mặt phố</option>
+							<option value="5">Đất nền dự án</option>
+							<option value="6">Trang trại, khu nghỉ dưỡng</option>
+							<option value="7">Kho, nhà xưởng</option>
+							<option value="8">Các loại bất động sản khác</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper tinh-thanh-pho">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Tỉnh/Thành phố</option>
+							<option value="1">Hồ Chí Minh</option>
+							<option value="2">Hà Nội</option>
+							<option value="3">Bình Dương</option>
+							<option value="4">Đà Nẵng</option>
+							<option value="5">Hải Phòng</option>
+							<option value="6">Long An</option>
+							<option value="7">Bà Rịa Vũng Tàu</option>
+							<option value="8">An Giang</option>
+							<option value="9">Bắc Giang</option>
+							<option value="10">Bắc Cạn</option>
+							<option value="11">Bạc Liêu</option>
+							<option value="12">Bắc Ning</option>
+							<option value="13">Bến Tre</option>
+							<option value="14">Bình Định</option>
+							<option value="15">Bình Phước</option>
+							<option value="16">Bình Thuận</option>
+							<option value="17">Cà Mau</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper quan-huyen">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Quận/Huyện</option>
+							<option value="1">Hoàn Kiếm</option>
+							<option value="2">Ba Đình</option>
+							<option value="">Đống Đa</option>
+							<option value="">Hai Bà Trưng</option>
+							<option value="">Thanh Xuân</option>
+							<option value="">Tây Hồ</option>
+							<option value="">Cầu Giấy</option>
+							<option value="">Hoàng Mai</option>
+							<option value="">Long Biên</option>
+							<option value="">Đông Anh</option>
+							<option value="">Gia Lâm</option>
+							<option value="">Sóc Sơn</option>
+							<option value="">Thanh Trì</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper dien-tich">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="">Diện tích</option>
+							<option value=""><= 30 m2</option>
+							<option value="">30-50 m2</option>
+							<option value="">50-80 m2</option>
+							<option value="">80-100 m2</option>
+							<option value="">100-150 m2</option>
+							<option value="">150-200 m2</option>
+							<option value="">200-250 m2</option>
+							<option value="">250-300 m2</option>
+							<option value="">300-350 m2</option>
+							<option value="">>= 500 m2</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper muc-gia">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option>1 tỷ</option>
+							<option>2 tỷ</option>
+							<option>3 tỷ</option>
+							<option>4 tỷ</option>
+							<option>5 tỷ</option>
+							<option>6 tỷ</option>								
+						</select>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn btn-primary nut-search">Search</button>
+
+			<!-- Dong search thu 2 -->
+			<div class="row search-2">
+				<div class="col">
+					<div class="wrapper phuong-xa">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Phường/Xã</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper duong-pho">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Đường phố</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper du-an">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Dự án</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper phong-ngu">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Phòng ngủ</option>
+							<option value="2">1+</option>
+							<option value="">2+</option>
+							<option value="">3+</option>
+							<option value="">4+</option>
+							<option value="">5+</option>
+							<option value="">6+</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="wrapper huong">
+						<select class="form-control" onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+							<option value="1">Hướng nhà</option>
+							<option value="2">Không xác định</option>
+							<option value="">Đông</option>
+							<option value="">Tây</option>
+							<option value="">Nam</option>
+							<option value="">Bắc</option>
+							<option value="">Đông - Bắc</option>
+							<option value="">Tây - Bắc</option>
+							<option value="">Tây - Nam</option>
+							<option value="">Đông - Nam</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Muc-ban-nha -->
+	<div class="muc-ban-nha">
+		<div class="row muc-ban-nha-1">
+			<div class="col muc-ban-nha-2">
+				<div class="sap-xep">
+					<span>Sắp xếp</span>
+					<div class="dropdown phu-hop-nhat">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Thời gian
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+							<button class="dropdown-item" type="button">Mới nhất</button>
+							<button class="dropdown-item" type="button">Lâu nhất</button>
+						</div>
+					</div>
+					<div class="dropdown theo-gia">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Giá 
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+							<button class="dropdown-item" type="button">Tăng dần</button>
+							<button class="dropdown-item" type="button">Giảm dần</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col muc-ban-nha-3">
+				<h3>Bán nhà giá rẻ năm 2020</h3>
+				<div class="ban-nha-dat-gia-re-nhat-nam">
+					<div class="cot-1">
+						<a href="#">Tp Hồ chí Minh</a>
+						<a href="#">Bình Dương</a>						
+						<a href="#">Đà Nẵng</a>
+						<a href="#">Bà Rịa Vũng Tàu</a>
+						<a href="#">Khánh Hòa</a>
+						<a href="#">Cần Thơ</a>
+						<a href="#">Bình Thuận</a>
+						<a href="#">Thừa Thiên Huế</a>
+						<a href="#">Quảng Nam</a>
+						<a href="#">Kiên Giang</a>
+					</div>
+					<div class="cot-2">
+						<a href="#">Hà Nội</a>
+						<a href="#">Đồng Nai</a>
+						<a href="#">Lâm Đồng</a>
+						<a href="#">Long An</a>
+						<a href="#">Bình Phước</a>
+						<a href="#">Hải Phòng</a>
+						<a href="#">Bình Định</a>
+						<a href="#">Quảng Ninh</a>
+						<a href="#">Phú Yên</a>
+						<a href="#">Quảng Ngãi</a>
+					</div>
+				</div>
+				<div class="tin-tuc-moi">
+					<h3>Bản tin mới</h3>
+					<div class="tin-tuc-moi-1">
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+						<div class="tin-moi-1">
+							<img src="../Img/anh19.jpg">
+							<a href="#">Bán Nhà Ở Hồ Tây Phòng đẹp</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row muc-ban-nha-4">
+			<div class="muc-ban-nha-5">
+				<div class="tin-bai-viet">
+					<div class="img-tin-bai-viet">
+						<img src="../Img/anh4.jpg">
+					</div>
+					<div class="noi-dung-tin-bai-viet">
+						<div class="tieu-de">
+							<a href="#"> Chỉ cần thanh toán 150 triệu sở hữu căn hộ cho gia đình nhỏ của mình ngay chợ đầu mối Thủ Đức</a>
+						</div>
+						<span>Với mức giá chỉ 1 tỷ để sở hữu căn 2PN bàn giao hoàn thiện để tìm Quanh Sài Gòn rất khó.
+						+ Bạn sẽ trả góp số tiền 1 tỷ trong 48 tháng không lãi suất ...</span>
+						<div class="tien-dt-gc">
+							<div class="tien icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="usd-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-usd-circle fa-w-16 fa-2x">
+									<path fill="currentColor" d="M291 244l-72-21.9c-9-2.8-15.2-12.1-15.2-22.7 0-12.9 9.2-23.4 20.5-23.4h45c7 0 13.8 1.9 19.9 5.4 6.4 3.7 14.3 3.4 19.7-1.6l12-11.3c7.6-7.2 6.3-19.4-2.3-25.2-13.8-9.3-29.9-14.5-46.4-15.1V112c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16v16c-37.6.1-68.2 32.1-68.2 71.4 0 31.5 20.2 59.7 49.2 68.6l72 21.9c9 2.8 15.2 12.1 15.2 22.7 0 12.9-9.2 23.4-20.5 23.4h-45c-7 0-13.8-1.9-19.9-5.4-6.4-3.7-14.3-3.4-19.7 1.6l-12 11.3c-7.6 7.2-6.3 19.4 2.3 25.2 13.8 9.3 29.9 14.5 46.4 15.1V400c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-16c37.6-.1 68.2-32.1 68.2-71.4 0-31.5-20.2-59.7-49.2-68.6zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200z" class=""></path>
+								</svg>
+								<span>870 - 1596 Triệu</span>
+							</div>
+							<div class="dien-tich icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-area" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chart-area fa-w-16 fa-2x">
+									<path fill="currentColor" d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z" class=""></path>
+								</svg>
+								<span>40 - 76 m2</span>
+							</div>
+							<div class="dia-chi icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x">
+									<path fill="currentColor" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+								</svg>
+								<span>Tecco Home - Đường ĐT 743, Phường An Phú, Huyện Thuận An, Bình Dương</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tin-bai-viet">
+					<div class="img-tin-bai-viet">
+						<img src="../Img/anh4.jpg">
+					</div>
+					<div class="noi-dung-tin-bai-viet">
+						<div class="tieu-de">
+							<a href="#"> Chỉ cần thanh toán 150 triệu sở hữu căn hộ cho gia đình nhỏ của mình ngay chợ đầu mối Thủ Đức</a>
+						</div>
+						<span>Với mức giá chỉ 1 tỷ để sở hữu căn 2PN bàn giao hoàn thiện để tìm Quanh Sài Gòn rất khó.
+						+ Bạn sẽ trả góp số tiền 1 tỷ trong 48 tháng không lãi suất ...</span>
+						<div class="tien-dt-gc">
+							<div class="tien icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="usd-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-usd-circle fa-w-16 fa-2x">
+									<path fill="currentColor" d="M291 244l-72-21.9c-9-2.8-15.2-12.1-15.2-22.7 0-12.9 9.2-23.4 20.5-23.4h45c7 0 13.8 1.9 19.9 5.4 6.4 3.7 14.3 3.4 19.7-1.6l12-11.3c7.6-7.2 6.3-19.4-2.3-25.2-13.8-9.3-29.9-14.5-46.4-15.1V112c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16v16c-37.6.1-68.2 32.1-68.2 71.4 0 31.5 20.2 59.7 49.2 68.6l72 21.9c9 2.8 15.2 12.1 15.2 22.7 0 12.9-9.2 23.4-20.5 23.4h-45c-7 0-13.8-1.9-19.9-5.4-6.4-3.7-14.3-3.4-19.7 1.6l-12 11.3c-7.6 7.2-6.3 19.4 2.3 25.2 13.8 9.3 29.9 14.5 46.4 15.1V400c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-16c37.6-.1 68.2-32.1 68.2-71.4 0-31.5-20.2-59.7-49.2-68.6zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200z" class=""></path>
+								</svg>
+								<span>870 - 1596 Triệu</span>
+							</div>
+							<div class="dien-tich icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-area" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chart-area fa-w-16 fa-2x">
+									<path fill="currentColor" d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z" class=""></path>
+								</svg>
+								<span>40 - 76 m2</span>
+							</div>
+							<div class="dia-chi icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x">
+									<path fill="currentColor" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+								</svg>
+								<span>Tecco Home - Đường ĐT 743, Phường An Phú, Huyện Thuận An, Bình Dương</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tin-bai-viet">
+					<div class="img-tin-bai-viet">
+						<img src="../Img/anh4.jpg">
+					</div>
+					<div class="noi-dung-tin-bai-viet">
+						<div class="tieu-de">
+							<a href="#"> Chỉ cần thanh toán 150 triệu sở hữu căn hộ cho gia đình nhỏ của mình ngay chợ đầu mối Thủ Đức</a>
+						</div>
+						<span>Với mức giá chỉ 1 tỷ để sở hữu căn 2PN bàn giao hoàn thiện để tìm Quanh Sài Gòn rất khó.
+						+ Bạn sẽ trả góp số tiền 1 tỷ trong 48 tháng không lãi suất ...</span>
+						<div class="tien-dt-gc">
+							<div class="tien icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="usd-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-usd-circle fa-w-16 fa-2x">
+									<path fill="currentColor" d="M291 244l-72-21.9c-9-2.8-15.2-12.1-15.2-22.7 0-12.9 9.2-23.4 20.5-23.4h45c7 0 13.8 1.9 19.9 5.4 6.4 3.7 14.3 3.4 19.7-1.6l12-11.3c7.6-7.2 6.3-19.4-2.3-25.2-13.8-9.3-29.9-14.5-46.4-15.1V112c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16v16c-37.6.1-68.2 32.1-68.2 71.4 0 31.5 20.2 59.7 49.2 68.6l72 21.9c9 2.8 15.2 12.1 15.2 22.7 0 12.9-9.2 23.4-20.5 23.4h-45c-7 0-13.8-1.9-19.9-5.4-6.4-3.7-14.3-3.4-19.7 1.6l-12 11.3c-7.6 7.2-6.3 19.4 2.3 25.2 13.8 9.3 29.9 14.5 46.4 15.1V400c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-16c37.6-.1 68.2-32.1 68.2-71.4 0-31.5-20.2-59.7-49.2-68.6zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200z" class=""></path>
+								</svg>
+								<span>870 - 1596 Triệu</span>
+							</div>
+							<div class="dien-tich icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-area" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chart-area fa-w-16 fa-2x">
+									<path fill="currentColor" d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z" class=""></path>
+								</svg>
+								<span>40 - 76 m2</span>
+							</div>
+							<div class="dia-chi icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x">
+									<path fill="currentColor" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+								</svg>
+								<span>Tecco Home - Đường ĐT 743, Phường An Phú, Huyện Thuận An, Bình Dương</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tin-bai-viet">
+					<div class="img-tin-bai-viet">
+						<img src="../Img/anh4.jpg">
+					</div>
+					<div class="noi-dung-tin-bai-viet">
+						<div class="tieu-de">
+							<a href="#"> Chỉ cần thanh toán 150 triệu sở hữu căn hộ cho gia đình nhỏ của mình ngay chợ đầu mối Thủ Đức</a>
+						</div>
+						<span>Với mức giá chỉ 1 tỷ để sở hữu căn 2PN bàn giao hoàn thiện để tìm Quanh Sài Gòn rất khó.
+						+ Bạn sẽ trả góp số tiền 1 tỷ trong 48 tháng không lãi suất ...</span>
+						<div class="tien-dt-gc">
+							<div class="tien icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="usd-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-usd-circle fa-w-16 fa-2x">
+									<path fill="currentColor" d="M291 244l-72-21.9c-9-2.8-15.2-12.1-15.2-22.7 0-12.9 9.2-23.4 20.5-23.4h45c7 0 13.8 1.9 19.9 5.4 6.4 3.7 14.3 3.4 19.7-1.6l12-11.3c7.6-7.2 6.3-19.4-2.3-25.2-13.8-9.3-29.9-14.5-46.4-15.1V112c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16v16c-37.6.1-68.2 32.1-68.2 71.4 0 31.5 20.2 59.7 49.2 68.6l72 21.9c9 2.8 15.2 12.1 15.2 22.7 0 12.9-9.2 23.4-20.5 23.4h-45c-7 0-13.8-1.9-19.9-5.4-6.4-3.7-14.3-3.4-19.7 1.6l-12 11.3c-7.6 7.2-6.3 19.4 2.3 25.2 13.8 9.3 29.9 14.5 46.4 15.1V400c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-16c37.6-.1 68.2-32.1 68.2-71.4 0-31.5-20.2-59.7-49.2-68.6zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200z" class=""></path>
+								</svg>
+								<span>870 - 1596 Triệu</span>
+							</div>
+							<div class="dien-tich icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-area" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chart-area fa-w-16 fa-2x">
+									<path fill="currentColor" d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z" class=""></path>
+								</svg>
+								<span>40 - 76 m2</span>
+							</div>
+							<div class="dia-chi icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x">
+									<path fill="currentColor" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+								</svg>
+								<span>Tecco Home - Đường ĐT 743, Phường An Phú, Huyện Thuận An, Bình Dương</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tin-bai-viet">
+					<div class="img-tin-bai-viet">
+						<img src="../Img/anh4.jpg">
+					</div>
+					<div class="noi-dung-tin-bai-viet">
+						<div class="tieu-de">
+							<a href="#"> Chỉ cần thanh toán 150 triệu sở hữu căn hộ cho gia đình nhỏ của mình ngay chợ đầu mối Thủ Đức</a>
+						</div>
+						<span>Với mức giá chỉ 1 tỷ để sở hữu căn 2PN bàn giao hoàn thiện để tìm Quanh Sài Gòn rất khó.
+						+ Bạn sẽ trả góp số tiền 1 tỷ trong 48 tháng không lãi suất ...</span>
+						<div class="tien-dt-gc">
+							<div class="tien icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="usd-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-usd-circle fa-w-16 fa-2x">
+									<path fill="currentColor" d="M291 244l-72-21.9c-9-2.8-15.2-12.1-15.2-22.7 0-12.9 9.2-23.4 20.5-23.4h45c7 0 13.8 1.9 19.9 5.4 6.4 3.7 14.3 3.4 19.7-1.6l12-11.3c7.6-7.2 6.3-19.4-2.3-25.2-13.8-9.3-29.9-14.5-46.4-15.1V112c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16v16c-37.6.1-68.2 32.1-68.2 71.4 0 31.5 20.2 59.7 49.2 68.6l72 21.9c9 2.8 15.2 12.1 15.2 22.7 0 12.9-9.2 23.4-20.5 23.4h-45c-7 0-13.8-1.9-19.9-5.4-6.4-3.7-14.3-3.4-19.7 1.6l-12 11.3c-7.6 7.2-6.3 19.4 2.3 25.2 13.8 9.3 29.9 14.5 46.4 15.1V400c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-16c37.6-.1 68.2-32.1 68.2-71.4 0-31.5-20.2-59.7-49.2-68.6zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200z" class=""></path>
+								</svg>
+								<span>870 - 1596 Triệu</span>
+							</div>
+							<div class="dien-tich icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-area" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chart-area fa-w-16 fa-2x">
+									<path fill="currentColor" d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z" class=""></path>
+								</svg>
+								<span>40 - 76 m2</span>
+							</div>
+							<div class="dia-chi icon-noi-dung-bai viet">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x">
+									<path fill="currentColor" d="M192 0C85.903 0 0 86.014 0 192c0 71.117 23.991 93.341 151.271 297.424 18.785 30.119 62.694 30.083 81.457 0C360.075 285.234 384 263.103 384 192 384 85.903 297.986 0 192 0zm0 464C64.576 259.686 48 246.788 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 54.553-15.166 65.425-144 272zm-80-272c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" class=""></path>
+								</svg>
+								<span>Tecco Home - Đường ĐT 743, Phường An Phú, Huyện Thuận An, Bình Dương</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footer-1">
+			<div class="footer-2 logo-cong-ty">
+				<img src="../Img/logo.jpg">		
+				<span class="name-cong-ty">Công ty bất động sản Realestate</span>
+				<span class="dia-chi-footer">Tầng 11, Vincom Hai Bà Trưng - Hà Nội</span>
+				<span class="so-dien-thoai">(024) 3562 5939 - (024) 3562 5940</span>
+				<span class="lien-ket">				<i class="fab fa-youtube"></i>
+					<i class="fab fa-facebook-square"></i></span>
+				</div>
+				<div class="footer-2 huong-dan-1">
+					<span class="tieu-de-footer">Hướng dẫn</span>
+					<span class="huong-dan"><a href="#"> Về chúng tôi</a></span>
+					<span class="huong-dan"><a href="#">Câu hỏi thường gặp</a></span>
+					<span class="huong-dan"><a href="#">Sitemap</a></span>
+				</div>
+				<div class="footer-2 lien-he-footer">
+					<span class="lien-he footer-3">Liên lạc với chúng tôi</span>
+					<input type="text" class="input-footer footer-3">
+					<textarea class="noi-dung-footer footer-3"></textarea>
+					<button type="button" class="btn btn-success send-footer footer-3">Success</button>
+				</div>
+			</div>
+		</div>					
+
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="../Js/cuon-trang.js"></script>
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+	</html>
