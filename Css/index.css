@@ -674,7 +674,7 @@ span.box4-3 {
 .tieu-de-du-an {
     position: absolute;
     top: 85%;
-    left: 40%;
+    left: 37%;
     transform: translate(-116px, 0px);
     width: 77%;
     background-color: white;
@@ -761,7 +761,7 @@ a.carousel-control-next {
 
 /*Footer*/
 .footer-2.logo-cong-ty img {
-    width: 40%;
+    width: 24%;
     display: block;
     border-radius: 101px;
 }
@@ -778,16 +778,19 @@ a.carousel-control-next {
     width: 30%;
     order: 1;
     margin-left: -9%;
+    margin-top: 1%;
 }
 
 span.name-cong-ty {
     display: block;
     color: white;
+    font-size: 25px;
 }
 
 span.dia-chi-footer {
     display: block;
     color: white;
+    font-size: 18px;
 }
 
 span.so-dien-thoai {
@@ -888,4 +891,8 @@ span.huong-dan a:hover {
 
 .xem-them-nhathuedat {
     text-align: center;
+}
+
+.menu-logo a.dropbtn:hover {
+    text-decoration: none;
 }

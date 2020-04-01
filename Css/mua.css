@@ -13,6 +13,10 @@ img.logo {
 }
 
 /*Menu*/
+.menu-logo a.dropbtn:hover {
+    text-decoration: none;
+}
+
 .custom-btn:hover{
   letter-spacing:3px;
   transition:0.8 ease;
@@ -411,7 +415,7 @@ select.form-control {
 
 /*Footer*/
 .footer-2.logo-cong-ty img {
-    width: 40%;
+    width: 24%;
     display: block;
     border-radius: 101px;
 }
@@ -428,16 +432,19 @@ select.form-control {
     width: 30%;
     order: 1;
     margin-left: -9%;
+    margin-top: 1%;
 }
 
 span.name-cong-ty {
     display: block;
     color: white;
+    font-size: 25px;
 }
 
 span.dia-chi-footer {
     display: block;
     color: white;
+    font-size: 18px;
 }
 
 span.so-dien-thoai {
